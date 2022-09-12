@@ -1,0 +1,56 @@
+:root {
+    --outfitFont: 'Outfit', sans-serif;
+    --outfitFont400: 1.25rem/1.35rem var(--outfitFont);
+    --outfitFont700: 700 1.85rem/2.2rem var(--outfitFont);
+    --white: hsl(0, 0%, 100%);
+    --lightGray: hsl(212, 45%, 89%);
+    --grayishBlue: hsl(220, 15%, 55%);
+    --darkBlue: hsl(218, 44%, 22%);
+}
+
+body {
+    margin: 0;
+    background-color: var(--lightGray);
+    min-block-size: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    max-inline-size: 28rem;
+    margin: 0 auto;
+}
+
+.card img{
+    inline-size: 100%;
+    border-radius: 1rem;
+}
+
+
+.card {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.card h2 {
+    font: var(--outfitFont700);
+    color: var(--darkBlue);
+    margin: 0;
+}
+
+.card p {
+    font: var(--outfitFont400);
+    color: var(--grayishBlue);
+    margin: 0;
+    margin-block-end: 2rem;
+    margin-block-start: 1.5rem;
+}
+
+.cardContent {
+    padding-inline: 1.5rem;
+}
